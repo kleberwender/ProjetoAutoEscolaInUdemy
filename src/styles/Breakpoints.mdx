@@ -1,0 +1,42 @@
+import { Meta } from "@storybook/blocks";
+import {BreakpointSizes} from "./Breakpoints";
+
+<Meta title="Styles|Breakpoints" />
+# Breakpoints
+
+<table>
+  <tr>
+    <th>Extra Small (xs)</th>
+    <td>Default</td>
+  </tr>
+    <tr>
+    <th>Small (sm)</th>
+    <td> >={BreakpointSize.sm}</td>
+  </tr>
+    <tr>
+    <th>Medium (md)</th>
+    <td> >={BreakpointSize.md}</td>
+  </tr>
+    <tr>
+    <th>Large (lg)</th>
+    <td> >={BreakpointSize.lg}</td>
+  </tr>
+    <tr>
+    <th>Extra large (xl)</th>
+    <td> >={BreakpointSize.xl}</td>
+  </tr>
+</table>
+
+Using in styled component:
+```js
+import { breakAt, BreakpointSize } from Breakpoints;
+
+const Title = styled.h1`
+  font-size: 1rem;
+
+  ${breakAt(BreakpointSize.md)} {
+    font-size: 2rem;
+  }
+;`
+```
+
