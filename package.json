@@ -2,7 +2,6 @@
   "homepage": "https://kleberwender.github.io/ProjetoAutoEscola_Udemy",
   "name": "projeto-autoescola-site",
   "version": "0.1.0",
-  "homepage": "src/",
   "private": true,
   "dependencies": {
     "@chromatic-com/storybook": "^1.2.25",
