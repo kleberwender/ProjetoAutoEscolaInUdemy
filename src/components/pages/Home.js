@@ -103,7 +103,7 @@ const Home = () => (
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aspernatur repudiandae facilis expedita quas quam molestiae itaque labore ea dignissimos optio at, praesentium harum nisi cumque minus deleniti vero! Nulla!
         </Accordion>
         <Accordion title="Fui multado, e agora?">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aspernatur repudiandae facilis expedita quas quam molestiae itaque labore ea dignissimos optio at, praesentium harum nisi cumque minus deleniti vero! Nulla!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aspernatur repudiandae facilis expedita quas quam molestiae itaque labore ea dignissimos optio at.
         </Accordion>
       </AccordionGroup>
     </Section>
