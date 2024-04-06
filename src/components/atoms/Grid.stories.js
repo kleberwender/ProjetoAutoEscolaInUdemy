@@ -5,10 +5,6 @@ import Grid from "./Grid";
 export default {
   title: "Components/Atoms/Grid",
   component: Grid,
-  parameters: {
-    layout: 'centered',
-  },
-
   tags: [
     'autodocs'
   ],
