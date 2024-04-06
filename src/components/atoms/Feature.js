@@ -9,12 +9,10 @@ const Root = styled.div`
   
   & h5 {
     margin: 16px 0;
-     /* 1.2rem (front-size) *
-     1.3 (line-height) * 2 (line numbers) */
+     /* 1.2rem (front-size) * 1.3 (line-height) * 2 (line numbers) = */
     min-height: 3.12rem;
     ${breakAt(BreakpointSizes.lg)}{
-    /* 1.5rem (front-size) * 1.3
-    (line-height) * 2 (line numbers) */
+    /* 1.5rem (front-size) * 1.3(line-height) * 2 (line numbers) = */
       min-height: 3.9rem;
     }
   }

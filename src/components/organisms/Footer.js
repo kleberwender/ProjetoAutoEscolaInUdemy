@@ -1,7 +1,5 @@
 import React from "react";
 import { FaPhone, FaBuilding, FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
-
-
 import Container from "../atoms/Container";
 import Grid from "../atoms/Grid";
 import Heading from "../atoms/Heading";
@@ -35,49 +33,21 @@ const FooterLinks = styled.a`
   
   &::before{
     content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 0; 
-  height: 2px;
-  height: 2px;
-  background-color: ${props => props.theme.colors.primary.dark}; 
-  transition: width 0.4s ease; 
-  }
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0; 
+    height: 2px;
+    height: 2px;
+    background-color: ${props => props.theme.colors.primary.dark}; 
+    transition: width 0.4s ease; 
+    }
+
   &:hover::before {
     color: ${props => props.theme.colors.primary.dark};
     width: 100%;
   }
-
-
 `;
-
-/* 
-/* HTML básico para um link 
-a {
-  position: relative;
-  text-decoration: none;
-  color: #333;
-}
-
-/* Estilo da linha 
-a::before {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 0; /* Inicia com largura 0 
-  height: 2px;
-  background-color: #007bff; /* Cor da linha 
-  transition: width 0.3s ease; /* Transição suave 
-}
-
-/* Efeito de linha ao passar o mouse 
-a:hover::before {
-  width: 100%; /* Largura total 
-}
-
- */
 
 const Footer = () => (
   <Root>
