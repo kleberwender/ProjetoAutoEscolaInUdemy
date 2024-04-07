@@ -2,8 +2,7 @@
 const config = {
   stories: [
     "../src/**/*.mdx",
-    "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)",
-    "../src/styles/**/*.stories.(js|mdx)",
+    "../src/**/*.stories.@(js|jsx|mjs|ts|tsx|mdx)",
   ],
   addons: [
     "@storybook/preset-create-react-app",
@@ -13,7 +12,12 @@ const config = {
     "@chromatic-com/storybook",
     "@storybook/addon-interactions",
     "@storybook/addon-viewport",
-    "@storybook/addon-docs",
+    {
+      name: "@storybook/addon-docs",
+      options: {
+        configureJSX: true
+      }
+    },
     "@storybook/addon-mdx-gfm",
   ],
   framework: {

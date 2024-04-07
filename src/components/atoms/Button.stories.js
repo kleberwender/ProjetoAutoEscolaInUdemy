@@ -7,9 +7,6 @@ import styled from 'styled-components';
 export default {
   title: "Components/Atoms/Button",
   component: Button,
-  parameters: {
-    layout: 'centered',
-  },
 
   tags: [
     'autodocs'
