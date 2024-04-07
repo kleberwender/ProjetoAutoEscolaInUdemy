@@ -37,9 +37,8 @@ return (
     {!showAll && (
       <Toolbar>
         <Button variant="outlined" onClick={() => {setShowAll(true);}} aria-label="Lista completa de serviços">
-  Lista completa de serviços
-</Button>
-
+          Lista completa de serviços
+        </Button>
       </Toolbar>
     )}
   </>

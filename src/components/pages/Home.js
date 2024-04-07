@@ -87,7 +87,7 @@ const Home = () => (
           </div>
         </div>
         <div>
-          <video src={AbountVideo} width="100%" autoPlay loop />
+          <video src={AbountVideo} width="100%" autoPlay loop controls/>
         </div>
       </Grid>
     </Section>
