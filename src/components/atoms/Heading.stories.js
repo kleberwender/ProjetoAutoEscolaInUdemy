@@ -5,12 +5,9 @@ export default {
   title: "Components/Atoms/Heading",
   component: Heading,
   tags: ['autodocs'],
-  parameters: {
-    layout: 'centered',
-  },
 };
 
-export const usage = () => (
+export const Usage = () => (
   <div>
     <Heading>
       <h1>Título 1</h1>

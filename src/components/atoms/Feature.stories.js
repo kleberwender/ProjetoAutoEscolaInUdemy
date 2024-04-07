@@ -7,16 +7,12 @@ export default {
   title: "Components/Atoms/Feature",
   component: Feature,
 
-  parameters: {
-    layout: 'centered',
-  },
-
   tags: [
     'autodocs'
   ],
 };
 
-export const usage = () => (
+export const Usage = () => (
  <Feature icon={<FaCar />} title="Título">
   <p>
     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -24,7 +20,7 @@ export const usage = () => (
  </Feature>
 );
 
-export const withGrid = () => (
+export const WithGrid = () => (
   <Grid sm={2} md={4}>
     <Feature icon={<FaCar />} title="Maior e melhor frota">
       <p>

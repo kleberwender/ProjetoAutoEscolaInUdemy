@@ -5,12 +5,9 @@ export default {
   title: "Components/organisms/ProductGrid",
   component: ProductGrid,
   tags: ['autodocs'],
-  parameters: {
-    layout: 'centered',
-  },
 };
 
-export const usage = () => (
+export const Usage = () => (
   <ProductGrid
     products={[
       { id: 1, image: PlaceholderImage, title: "Título 1", summary: "Texto" },

@@ -15,7 +15,7 @@ const Box = styled.div`
   background-color: indigo;
 `;
 
-export const usage = () => (
+export const Usage = () => (
  <Grid sm={2} md={4} lg={4} xl={5}>
     <Box></Box>
     <Box></Box>

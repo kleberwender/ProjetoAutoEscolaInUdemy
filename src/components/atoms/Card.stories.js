@@ -9,16 +9,13 @@ export default {
   title: "Components/Atoms/Card",
   component: Card,
   subComponentes: {CardBody, CardMedia},
-  parameters: {
-    layout: 'centered',
-  },
 
   tags: [
     'autodocs'
   ],
 };
 
-export const usage = () => (
+export const Usage = () => (
  <Section inverse>
    <Card>
     <CardBody>
@@ -36,7 +33,7 @@ export const usage = () => (
  </Section>
 );
 
-export const withMedia = () => (
+export const WithMedia = () => (
   <Section inverse>
     <Card>
       <CardMedia image={PlaceholderImage}/>
@@ -52,6 +49,38 @@ export const withMedia = () => (
       </div>
       </CardBody>
     </Card>
+
+    <Card>
+      <CardMedia image={PlaceholderImage}/>
+    <CardBody>
+      <Heading>
+        <h6>Título</h6>
+      </Heading>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <div>
+        <Button color="primary" variant="link">Saiba Mais</Button>
+      </div>
+      </CardBody>
+    </Card>
+
+    <Card>
+      <CardMedia image={PlaceholderImage}/>
+    <CardBody>
+      <Heading>
+        <h6>Título</h6>
+      </Heading>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <div>
+        <Button color="primary" variant="link">Saiba Mais</Button>
+      </div>
+      </CardBody>
+    </Card>
   </Section>
+
+  
 
 );

@@ -25,7 +25,7 @@ const Toolbar = styled.div`
   }
 `;
 
-export const usage = () => (
+export const Usage = () => (
   <div>
     <p>Enabled:</p>
       <Toolbar> 
@@ -44,7 +44,7 @@ export const usage = () => (
   </div>
 ); 
 
-export const outlined = () => (
+export const Outlined = () => (
   <div>
     <p>Enabled:</p>
       <Toolbar> 
@@ -63,7 +63,7 @@ export const outlined = () => (
 );
 
 
-export const link = () => (
+export const Link = () => (
   <div>
     <p>Enabled:</p>
       <Toolbar> 
