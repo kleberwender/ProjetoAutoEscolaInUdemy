@@ -8,7 +8,8 @@ jobs:
       - image: circleci/node:20.12.2-browsers
     steps:
       - checkout
-      - node/install-yarn
+      - node/install
+          install-yarn: false
       - run: node --version
       - run: yarn --version
 workflows:
