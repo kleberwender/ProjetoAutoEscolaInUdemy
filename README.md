@@ -1,5 +1,9 @@
 # Getting Started with Create React App
 # Auto Escola Kleber
+
+![CircleCI](https://img.shields.io/circleci/build/github/kleberwender/ProjetoAutoEscolaInUdemy?style=flat)
+
+
  Este porojeto foi desenvolvido durante o curso [React Profissional](https://www.udemy.com/course/react-redux-profissional/?couponCode=24T3FS41524).
 
  Resultado final.
