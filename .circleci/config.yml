@@ -5,7 +5,7 @@ orbs:
 jobs:
   setup:
     docker:
-      - image: circleci/node:21.7.3-browsers
+      - image: circleci/node:20.12.0-browsers
     steps:
       - checkout
       - node/install-yarn
