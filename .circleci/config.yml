@@ -3,7 +3,7 @@ orbs:
   node: circleci/node@5.2.0
 
 jobs:
-  setup:
+  tests:
     docker:
       - image: circleci/node:20.12.2-browsers
     steps:
@@ -11,9 +11,12 @@ jobs:
       - node/install-yarn
       - run: node --version
       - run: yarn --version
+      - node/install-packages:
+        pkg-manager: yarn
+      - run: yarn lint
 workflows:
   ci:
     jobs:
-      - setup
+      - tests
 
   
