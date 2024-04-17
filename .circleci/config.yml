@@ -5,18 +5,16 @@ orbs:
 jobs:
   tests:
     docker:
-      - image: circleci/node:20.12.2-browsers
+      - image: circleci/node:latest-browsers
     steps:
       - checkout
       - node/install-yarn
       - run: node --version
       - run: yarn --version
       - node/install-packages:
-        pkg-manager: yarn
+          pkg-manager: yarn
       - run: yarn lint
 workflows:
   ci:
     jobs:
       - tests
-
-  
