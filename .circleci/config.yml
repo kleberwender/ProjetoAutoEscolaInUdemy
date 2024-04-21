@@ -24,7 +24,7 @@ jobs:
       - checkout
       - run:
           name: Check package version
-          command: node scripts/check-version.js kleberwender ProjetoAutoEscolaInUdemy
+          command: node script/check-version.js kleberwender ProjetoAutoEscolaInUdemy
 workflows:
   ci:
     jobs:
