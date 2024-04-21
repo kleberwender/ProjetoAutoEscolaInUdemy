@@ -16,9 +16,7 @@ jobs:
           pkg-manager: yarn
       - run: yarn lint
       - codecov/upload:
-          file: coverage/*.json
-          token: b3b00bbf-67f2-4284-8edf-8eb1050a1d13
-
+          file: ./coverage/*.json
 workflows:
   ci:
     jobs:
