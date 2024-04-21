@@ -1,0 +1,40 @@
+version: 2.1
+orbs:
+  node: circleci/node@5.2.0
+  codecov: codecov/codecov@4.1.0
+
+jobs:
+  tests:
+    docker:
+      - image: cimg/node:21.7.3
+    steps:
+      - checkout
+      - node/install-yarn
+      - run: node --version
+      - run: yarn --version
+      - node/install-packages:
+          pkg-manager: yarn
+      - run: yarn lint
+      - codecov/upload:
+          file: coverage/*.json
+      - run: yarn chromatic --project-token=${CHROMATIC_TOKEN}
+      - run: ./codecov create-commit -t $CODECOV_TOKEN
+      - run: ./codecov create-report -t $CODECOV_TOKEN
+  versioning:
+    docker:
+      - image: cimg/node:21.7.3
+    steps:
+      - checkout
+      - run:
+          name: Check package version
+          command: node script/check-version.js kleberwender ProjetoAutoEscolaInUdemy
+workflows:
+  ci:
+    jobs:
+      - tests
+      - versioning:
+          filters:
+            branches:
+              ignore: main
+            tags:
+              ignore: /.*/
