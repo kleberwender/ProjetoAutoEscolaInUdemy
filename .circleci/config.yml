@@ -22,5 +22,4 @@ workflows:
   ci:
     jobs:
       - tests
-      - checkout
       - codecov/upload
