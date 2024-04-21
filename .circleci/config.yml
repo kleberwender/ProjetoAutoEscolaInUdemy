@@ -20,8 +20,6 @@ jobs:
       - run: yarn chromatic --project-token=${CHROMATIC_TOKEN}
       - run: ./codecov create-commit -t $CODECOV_TOKEN
       - run: ./codecov create-report -t $CODECOV_TOKEN
-      - run: ./codecov do-upload -t $CODECOV_TOKEN -n "50" -f coverage/*.json
-
   versioning:
     docker:
       - image: cimg/node:21.7.3
