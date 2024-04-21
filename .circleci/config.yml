@@ -15,9 +15,12 @@ jobs:
       - node/install-packages:
           pkg-manager: yarn
       - run: yarn lint
-      - codecov/upload:
-          file: coverage/*.json
 workflows:
   ci:
     jobs:
       - tests
+  upload-to-codecov:
+    jobs:
+      - checkout
+      - codecov/upload:
+          file: coverage/*.json
