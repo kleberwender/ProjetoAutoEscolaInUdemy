@@ -20,7 +20,6 @@ workflows:
     jobs:
       - tests
   upload-to-codecov:
-    jobs:
-      - checkout
-      - codecov/upload:
-          file: coverage/*.json
+   jobs:
+    - checkout
+    - codecov/upload
