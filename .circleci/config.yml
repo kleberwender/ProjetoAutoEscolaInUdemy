@@ -17,8 +17,21 @@ jobs:
       - run: yarn lint
       - codecov/upload:
           file: coverage/*.json
-          
+  versioning:
+    docker:
+      - image: cimg/node:21.7.3
+    steps:
+      - checkout
+      - run:
+          name: Check package version
+          command: node scripts/check-version.js kleberwender ProjetoAutoEscolaInUdemy
 workflows:
   ci:
     jobs:
       - tests
+      - versioning:
+          filters:
+            branches:
+              ignore: main
+            tags:
+              ignore: /.*/
