@@ -15,12 +15,15 @@ jobs:
       - node/install-packages:
           pkg-manager: yarn
       - run: yarn lint
-      - run: 
+      - run:
+          name: Install codecov
+          command: | curl -s https://codecov.io/bash > codecov chmod +x codecov
+      - run:
           name: Debug codecov
           command: ./codecov -t $CODECOV_TOKEN -d
       - codecov/upload:
           file: coverage/*.json
-          
+
 workflows:
   ci:
     jobs:
