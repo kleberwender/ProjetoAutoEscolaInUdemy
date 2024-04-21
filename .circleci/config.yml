@@ -16,7 +16,7 @@ jobs:
           pkg-manager: yarn
       - run: yarn lint
       - codecov/upload:
-          file: covarege/*.json
+          file: coverage/*.json
 workflows:
   ci:
     jobs:
