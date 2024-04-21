@@ -15,8 +15,11 @@ jobs:
       - node/install-packages:
           pkg-manager: yarn
       - run: yarn lint
+      - run:
+          name: Debug Codecov
+          command: .node_modules/.bin/codecov -t $CODECOV_TOKEN
       - codecov/upload:
-          file: ./coverage
+          file: coverage/*.json
 workflows:
   ci:
     jobs:
