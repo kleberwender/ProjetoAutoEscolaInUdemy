@@ -17,7 +17,7 @@ jobs:
       - run: yarn lint
       - run:
           name: Run codecov
-          command: ./codecov -t $CODECOV_TOKEN -d
+          command: ./node_modules/.bin/codecov -t $CODECOV_TOKEN -d
       - codecov/upload:
           file: coverage/*.json
 
