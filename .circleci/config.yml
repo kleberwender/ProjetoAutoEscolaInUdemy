@@ -15,7 +15,7 @@ jobs:
       - node/install-packages:
           pkg-manager: yarn
       - run: yarn lint
-      - codecov:
+      - codecov/upload:
           file: covarege/*.json
 workflows:
   ci:
