@@ -1,6 +1,7 @@
 version: 2.1
 orbs:
   node: circleci/node@5.2.0
+  codecov: codecov/codecov@4.1.0
 
 jobs:
   tests:
@@ -14,6 +15,8 @@ jobs:
       - node/install-packages:
           pkg-manager: yarn
       - run: yarn lint
+      - codecov:
+          file: covarege/*.json
 workflows:
   ci:
     jobs:
