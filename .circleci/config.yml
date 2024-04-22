@@ -16,7 +16,7 @@ jobs:
           pkg-manager: yarn
       - run: yarn lint
       - run:
-          name: Debug Codecov
+          name: Debug codecov
           command: ./node_modules/.bin/codecov -t $CODECOV_TOKEN
           
       - codecov/upload:
