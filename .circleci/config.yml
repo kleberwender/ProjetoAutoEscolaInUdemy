@@ -18,6 +18,7 @@ jobs:
       - run:
           name: Debug Codecov
           command: ./node_modules/.bin/codecov -t $CODECOV_TOKEN
+          
       - codecov/upload:
           file: coverage/*.json
 workflows:
