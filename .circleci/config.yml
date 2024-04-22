@@ -20,7 +20,8 @@ jobs:
           command: ./node_modules/.bin/codecov -t $CODECOV_TOKEN
 
       - codecov/upload:
-          file: https://app.codecov.io/github/kleberwender/ProjetoAutoEscolaInUdemy
+          file: https://app.codecov.io/github/kleberwender/ProjetoAutoEscolaInUdemy/commit/7cf4a811158b876de3d180977f5386e2557684f4
+          
 workflows:
   ci:
     jobs:
