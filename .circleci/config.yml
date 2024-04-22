@@ -20,7 +20,7 @@ jobs:
           command: ./node_modules/.bin/codecov -t $CODECOV_TOKEN
           
       - codecov/upload:
-          file: coverage/*.json
+          file: ../coverage/*.json
 workflows:
   ci:
     jobs:
