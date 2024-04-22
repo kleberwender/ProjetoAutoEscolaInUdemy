@@ -15,16 +15,9 @@ jobs:
       - node/install-packages:
           pkg-manager: yarn
       - run: yarn lint
-      - run:
-          name: Check coverage files
-          command: ls -l coverage/*.json
-      - run:
-          name: Debug codecov
-          command: ./node_modules/.bin/codecov -t $CODECOVTOKEN
       - codecov/upload:
           file: coverage/*.json
-          # Você pode adicionar outras opções aqui, se necessário
-
+          
 workflows:
   ci:
     jobs:
