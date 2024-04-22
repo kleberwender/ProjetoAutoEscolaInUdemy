@@ -32,7 +32,7 @@ jobs:
           command: ./codecov do-upload -t $CODECOV_TOKEN -r ProjetoAutoEscolaInUdemy -n "72" -f coverage/*.json
 
       - codecov/upload:
-          file: ../coverage/*.json
+          file: ./coverage/*.json
 workflows:
   ci:
     jobs:
