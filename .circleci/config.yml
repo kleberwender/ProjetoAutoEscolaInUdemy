@@ -16,11 +16,17 @@ jobs:
           pkg-manager: yarn
       - run: yarn lint
       - run:
+          name: Check coverage files
+          command: ls -l coverage/*.json
+      - run:
           name: Debug codecov
           command: ./node_modules/.bin/codecov -t $CODECOVTOKEN
-
+      - run:
+          name: Print token and repository
+          command: echo "Token: $CODECOVTOKEN, Repository: kleberwender/ProjetoAutoEscolaInUdemy"
       - codecov/upload:
-          file: ls -l coverage/*.json
+          file: coverage/*.json
+          # Você pode adicionar outras opções aqui, se necessário
 
 workflows:
   ci:
