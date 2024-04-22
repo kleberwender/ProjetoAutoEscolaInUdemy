@@ -21,8 +21,7 @@ jobs:
             echo "Token: $CODECOVTOKEN, Repository: kleberwender/ProjetoAutoEscolaInUdemy"
             ./node_modules/.bin/codecov -t $CODECOVTOKEN -r kleberwender/ProjetoAutoEscolaInUdemy
       - codecov/upload:
-          files: - "coverage/*.json"
-
+          files: ["coverage/*.json"]
 workflows:
   ci:
     jobs:
