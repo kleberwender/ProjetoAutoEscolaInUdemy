@@ -18,7 +18,19 @@ jobs:
       - run:
           name: Debug codecov
           command: ./node_modules/.bin/codecov -t $CODECOV_TOKEN
-          
+
+      - run:
+          name: Create commit report
+          command: ./codecov create-commit -t $CODECOV_TOKEN -r ProjetoAutoEscolaInUdemy
+
+      - run:
+          name: Create coverage report
+          command: ./codecov create-report -t $CODECOV_TOKEN -r ProjetoAutoEscolaInUdemy
+
+      - run:
+          name: Upload coverage report
+          command: ./codecov do-upload -t $CODECOV_TOKEN -r ProjetoAutoEscolaInUdemy -n "72" -f coverage/*.json
+
       - codecov/upload:
           file: ../coverage/*.json
 workflows:
