@@ -2,7 +2,7 @@
 
 ![CircleCI](https://img.shields.io/circleci/build/github/kleberwender/ProjetoAutoEscolaInUdemy?style=flat)
 ![Codecov](https://img.shields.io/codecov/c/github/kleberwender/ProjetoAutoEscolaInUdemy?style=flat)
-
+[![codecov](https://codecov.io/gh/kleberwender/ProjetoAutoEscolaInUdemy/graph/badge.svg?token=PR08BXH4FK)](https://codecov.io/gh/kleberwender/ProjetoAutoEscolaInUdemy)
 
 
  Este porojeto foi desenvolvido durante o curso [React Profissional](https://www.udemy.com/course/react-redux-profissional/?couponCode=24T3FS41524).
