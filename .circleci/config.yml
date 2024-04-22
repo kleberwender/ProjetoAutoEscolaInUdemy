@@ -20,10 +20,10 @@ jobs:
           command: ls -l coverage/*.json
       - run:
           name: Debug codecov
-          command: ./node_modules/.bin/codecov -t $CODECOVTOKEN -r <username>/<repository_name>
+          command: ./node_modules/.bin/codecov -t $CODECOVTOKEN -r kleberwender/ProjetoAutoEscolaInUdemy
       - run:
           name: Print token and repository
-          command: echo 'Token: $CODECOVTOKEN, Repository: kleberwender/ProjetoAutoEscolaInUdemy'
+          command: echo 'Token: $CODECOVTOKEN, Repository: kleberwender\/ProjetoAutoEscolaInUdemy'
       - codecov/upload:
           file: coverage/*.json
 
